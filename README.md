@@ -9,6 +9,9 @@ Interested in contributing? Great, we'd love to get your help! Just speak with a
 ## Current Features
 
 1. Assign roles based on reaction
+
+Bot currently resends questionnaire everytime it's restarted. We can introduce database to keep track of previously asked questions to prevent this.
+
 2. Respond to "hi jamie"
 
 ## Work in Progress
@@ -20,29 +23,29 @@ Interested in contributing? Great, we'd love to get your help! Just speak with a
 
 ## Development Guide
 
-0. We recommend using VSCode for development. Install the ESLint extension.
+1. We recommend using VSCode for development. Install the ESLint extension.
 
-1. Fork and clone this repo.
+2. Fork and clone this repo.
 
-2. Request for the Discord bot token. Create an .env file in the main directory and paste this, replacing `<DISCORD_TOKEN>` with the token you have.
+3. Request for the Discord bot token. Create an .env file in the main directory and paste this, replacing `<DISCORD_TOKEN>` with the token you have.
 ```
     DISCORD_TOKEN=<DISCORD_TOKEN>
 ```
 
-3. Install dependencies required for the bot to work. This only needs to be done once (until more dependencies are added).
+4. Install dependencies required for the bot to work. This only needs to be done once (until more dependencies are added).
 ```
     npm install
 ```
 
-4. Run the server.
+5. Run the server.
 ```
     npm run devStart
 ```
 The bot should now be logged in, and you should see `Ready! Logged in as askjamie ..` printed to console.
 
-5. Head over to our [Test Server](https://discord.gg/Ed9nHpXmMa) to interact with and test the bot as you make changes. Note that the discord token is shared amongst contributors, so if the bot appears to be doing something weird in the test server while you're working with it, another contributor might also be working on it at the same time.
+6. Head over to our [Test Server](https://discord.gg/Ed9nHpXmMa) to interact with and test the bot as you make changes. Note that the discord token is shared amongst contributors, so if the bot appears to be doing something weird in the test server while you're working with it, that might be due to another contributor working on it at the same time.
 
-6. Once done, make a pull request to this repo, and we'll review the changes - make sure there are no linter errors.
+7. Once done, make a pull request to this repo, and we'll review the changes - make sure there are no linter errors.
 
 ## Resources
 
@@ -51,6 +54,7 @@ The bot should now be logged in, and you should see `Ready! Logged in as askjami
 [Linting](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/)
 
 NPM and Node:
+
 https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/
 https://docs.npmjs.com/about-npm#getting-started
 
